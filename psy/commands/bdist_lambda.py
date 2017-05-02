@@ -1,11 +1,11 @@
 from pex.commands import bdist_pex
 
-PREAMBULE = b"""
+PREAMBULE = """
 __distribution__ = '{distro}'
 
 """
 
-BOOTSTRAP_LAMBDA = b"""
+BOOTSTRAP_LAMBDA = """
 import os
 import sys
 
@@ -52,7 +52,7 @@ class bdist_lambda(bdist_pex.bdist_pex):
             builder.set_script(script)
 
         name = self.distribution.get_name()
-        builder._chroot.write(PREAMBULE.format(distro=name) + BOOTSTRAP_LAMBDA,
+        builder._chroot.write((PREAMBULE.format(distro=name) + BOOTSTRAP_LAMBDA).encode(),
                               'lambda_handler.py',
                               label='source')
         target = target[:-4] + '.zip'

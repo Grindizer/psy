@@ -1,5 +1,5 @@
 ===
-Psy
+PSY
 ===
 
 Utility to create aws lambda bundles out of python packages.
