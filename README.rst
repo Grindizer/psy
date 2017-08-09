@@ -4,7 +4,7 @@ PSY
 
 Utility to create aws lambda bundles out of python packages.
 
-`psy` is a python utility that allows you to generate (and handle) aws lambda bundles out of classical
+`Psy` is a python utility that allows you to generate (and handle) aws lambda bundles out of classical
 setuptools based python packages.
 
 =====
@@ -12,7 +12,7 @@ Why ?
 =====
 
 If you had to work with AWS Lambda as part of your day to day work you may have noticed that you can easily end up
-with spaguetti-long-single-file python scripts: Not easy to keep track, organize distribute or package.
+with single python files.  spaguetti-long-single-file python scripts: Not easy to keep track, organize distribute or package.
 
 `psy` tries to address this problem by leveraging python packaging capabilities.
 
@@ -74,3 +74,4 @@ Enhancement...
 
 * Add a psy command line that can work with bundle as to run the handler locally for test.
 * Generate a iam policy - even if not always totally correct - to work with the lambda.
+

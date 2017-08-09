@@ -38,7 +38,6 @@ if dist:
 
 """
 
-
 class bdist_lambda(bdist_pex.bdist_pex):
     description = "Generate a package to use with aws lambda"
     user_options = [

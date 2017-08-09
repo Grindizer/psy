@@ -1,4 +1,11 @@
 CHANGES
 =======
 
+0.0.1
+-----
+
+* py3 compatible
+* English meets dislexia fixes !
+* Initial commit
+* Added a setuptools command extension. Shamlessly wrap the great pex tools to produce the package and then modify the main chroot to export lambda entrypoints
 * initial package
